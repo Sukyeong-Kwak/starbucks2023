@@ -1,0 +1,214 @@
+@import "variables.css";
+@import "reset.css";
+
+/* COMMON */
+body {
+  font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+  height: 3000px;
+}
+.big-box {
+  width: 1100px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  border-top: 2px black solid;
+  position: fixed;
+  top: 0;
+  background-color: #f6f5ef;
+  z-index: 2;
+}
+.header__box {
+  height: 120px;
+  position: relative;
+  color: rgba(0,0,0,0.7);
+}
+@media screen and (min-width: 961px) and (max-width: 1100px) {
+  .header__box {
+    /* height: 120px; */
+    /* width: 1100px; */
+    margin: 0 auto;
+    position: relative;
+  }
+}
+.header__logo {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.header__sub-menu__list {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.header__sub-menu__item {
+  font-size: 13px;
+  padding: 0 16px;
+  transition: color .2s ease-in-out;
+  position: relative;
+}
+.header__sub-menu__item::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: rgba(0,0,0,0.07);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 0;
+}
+.header__sub-menu__item:first-child:before {
+  display: none;
+}
+.header__sub-menu__item:hover {
+  color: rgba(0,0,0,0.9);
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 6px;
+  position: relative;
+  transition: all .5s ease-in-out;
+}
+.header__search:hover,
+.header__search:focus-within {
+  width: 150px;
+}
+.header__search-box {
+  width: 0;
+  position: absolute;
+  right: 35px;
+  border: transparent;
+  background-color: transparent;
+  outline: transparent;
+  transition: all .5s ease-in-out;
+}
+.header__search:hover .header__search-box, 
+.header__search:focus-within .header__search-box {
+  width: 110px;
+}
+.header__search-box::placeholder {
+  color: rgba(0,0,0,0.3);
+  font-size: 10px;
+}
+.header__search-logo {
+  position: absolute;
+  right: 12px;
+}
+
+
+.header__main-menu {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.header__main-menu__title {
+  font-size: 13px;
+  padding: 10px 25px  35px ;
+  color: rgba(0,0,0,0.9);
+  border-radius: 10px 10px 0 0;
+}
+.header__main-menu__title:hover {
+  background-color: #2c2a29;
+  color: #669900;
+}
+
+.header__main-menu__item > .header__main-menu__second-menu-big-box {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  /* top: 120px; */
+  background-color: #2c2a29;
+  display: none;
+  color: white;
+  transition: all .1s ease-in-out;
+}
+.header__main-menu__item > .header__main-menu__second-menu-big-box > .header__main-menu__second-menu-small-box {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+.header__main-menu__item:hover > .header__main-menu__second-menu-big-box {
+  display: flex;
+  top: 120px;
+}
+.header__main-menu__item:hover > .header__main-menu__title {
+  background-color: #2c2a29;
+  color: #669900;
+}
+.header__main-menu__second-menu-content {
+  width: 220px;
+  padding: 10px 0 20px;
+}
+.header__main-menu__second-menu-title {
+  font-size: 13px;
+  padding: 15px 0;
+  font-weight: 700px;
+}
+.header__main-menu__second-menu-items {
+
+  font-size: 11px;
+  color: rgba(255,255,255,0.5)
+}
+.header__main-menu__second-menu-items > li {
+  padding: 5px 0;
+}
+
+/* MAIN-VIUAL */
+.main-visual{
+  margin-top: 120px;
+  height: 32vw;
+  background-image: url('https://image.istarbucks.co.kr/upload/common/img/main/2023/2023_spring2_promotion_bg_1.jpg');
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.main-visual__content {
+  height: 646px;
+  position: relative;
+  /* background-color: orange; */
+}
+/* .main-visual__juice-1 {
+  left: 750px;
+  top: 50px;
+}
+.main-visual__juice-1 > img {
+  height: 385px;
+}
+.main-visual__juice-2 {
+  left: 750px;
+  top: 50px;
+}
+.main-visual__juice-2 > img {
+  height: 385px;
+}
+.main-visual__juice-3 {
+  left: 750px;
+  top: 50px;
+}
+.main-visual__juice-3 > img {
+  height: 385px;
+}
+.main-visual__text {
+  left: 750px;
+  top: 50px;
+} */
