@@ -1,0 +1,47 @@
+body {
+  font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+  height: 3000px;
+}
+.big-box {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+img {
+  display: block;
+}
+.btn {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #014938;
+  border: 2px solid #014938;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+.btn:hover {
+  background-color: #014938;
+  color: #fff;
+}
+.btn-green {
+  background-color: #00704a;
+  border: 2px solid #00704a; 
+  color: #fff;
+}
+.btn-green:hover {
+  background-color: #fff;
+  color: #00704a;
+}
+.btn-reverse {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+.btn-reverse:hover {
+  background-color: #fff;
+  color: #014938;
+}
